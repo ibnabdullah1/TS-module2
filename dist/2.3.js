@@ -19,7 +19,7 @@
     //  true,true,
     //   ];
     const userWithId = [11, { name: "Arafat", role: "Developer", salary: 10000 }, true];
-    //    Enum Types
+    // Enum Types
     let Direction;
     (function (Direction) {
         Direction["Up"] = "UP";

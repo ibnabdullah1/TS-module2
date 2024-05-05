@@ -25,18 +25,20 @@
   const human: GenericTuple<string, string> = ["Mr. X", "Mr. Y"];
 
   type GenericTupleWithId<A, B, C> = [A, B, C];
+
   //   const userWithId: GenericTupleWithId<number, object, boolean> = [
   //     11,
   //     { name: "Arafat", role: "Developer" },
   //  true,true,
   //   ];
+
   const userWithId: GenericTupleWithId<
     number,
     { name: string; role: string; salary: number },
     boolean
   > = [11, { name: "Arafat", role: "Developer", salary: 10000 }, true];
 
-  //    Enum Types
+  // Enum Types
   enum Direction {
     Up = "UP",
     Down = "DOWN",
