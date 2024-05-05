@@ -1,7 +1,7 @@
 {
   //  Generic Interface
 
-  interface Developer<T> {
+  interface Developer<T, X> {
     name: string;
     computer: {
       brand: string;
@@ -9,8 +9,9 @@
       releaseYear: number;
     };
     smartWatch: T;
+    bikes?: X;
   }
-  const poorDeveloper: Developer<{ brand: string; model: string }> = {
+  const poorDeveloper: Developer<{ brand: string; model: string }, null> = {
     name: "Arafat Hosen",
     computer: {
       brand: "HP",
@@ -22,12 +23,20 @@
       model: "Something",
     },
   };
-  const richDeveloper: Developer<{
-    brand: string;
+  type bikeDetails = {
     model: string;
-    heartTrack: boolean;
-    sleepTrack: boolean;
-  }> = {
+    brand: string;
+  };
+
+  const richDeveloper: Developer<
+    {
+      brand: string;
+      model: string;
+      heartTrack: boolean;
+      sleepTrack: boolean;
+    },
+    bikeDetails
+  > = {
     name: "Abdullah",
     computer: {
       brand: "Mac Book",
@@ -39,6 +48,10 @@
       model: "Something",
       heartTrack: true,
       sleepTrack: true,
+    },
+    bikes: {
+      model: "Version 4.0",
+      brand: "Yamaha v4",
     },
   };
   //

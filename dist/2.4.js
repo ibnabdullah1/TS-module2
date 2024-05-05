@@ -25,6 +25,10 @@
             heartTrack: true,
             sleepTrack: true,
         },
+        bikes: {
+            model: "Version 4.0",
+            brand: "Yamaha v4",
+        },
     };
     //
 }
