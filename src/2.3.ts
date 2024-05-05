@@ -36,5 +36,14 @@
     boolean
   > = [11, { name: "Arafat", role: "Developer", salary: 10000 }, true];
 
+  //    Enum Types
+  enum Direction {
+    Up = "UP",
+    Down = "DOWN",
+    Left = "LEFT",
+    Right = "RIGHT",
+  }
+  console.log(Direction.Left); // 2
+
   //
 }

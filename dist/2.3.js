@@ -19,5 +19,14 @@
     //  true,true,
     //   ];
     const userWithId = [11, { name: "Arafat", role: "Developer", salary: 10000 }, true];
+    //    Enum Types
+    let Direction;
+    (function (Direction) {
+        Direction["Up"] = "UP";
+        Direction["Down"] = "DOWN";
+        Direction["Left"] = "LEFT";
+        Direction["Right"] = "RIGHT";
+    })(Direction || (Direction = {}));
+    console.log(Direction.Left); // 2
     //
 }
